@@ -370,7 +370,7 @@ body {
 
 .call-to-action:before {
     content: "";
-    background: color-mix(in srgb, #fa8e0b, transparent 35%);
+    /* background: color-mix(in srgb, #fa8e0b, transparent 35%); */
     position: absolute;
     inset: 0;
     z-index: 2;
