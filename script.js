@@ -14,26 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // navbar scroll
-const Navcolor = document.getElementById('Navcolor');
-window.addEventListener("scroll",function(){
-    let Navcolor = document.querySelector(".Navcolor");
-    if (window.scrollY > 50){
-        Navcolor.classList.add("scrolled");
-    } else{
-        Navcolor.classList.remove("scrolled");
-    }
-});
-
-// scrolltotop
-const scrollTop = document.getElementsByClassName('scrollTop');
-window.addEventListener("scroll",function(){
-    let scrollTop = document.querySelector(".scrollTop");
-    if (window.scrollY > 300) {
-        scrollToTopBtn.style.display = "block"; // Show button
-    } else {
-        scrollToTopBtn.style.display = "none"; // Hide button
-    }
-});
+// const Navcolor = document.getElementById('Navcolor');
+// window.addEventListener("scroll",function(){
+//     let navcolor = document.querySelector(".Navcolor");
+//     if (this.window.innerHeight >= 768) {
+//         if (this.window.scrollY > 100) {
+//             if (window.scrollY > 150){
+//                 navcolor.classList.add("scrolled");
+//             } else{
+//                 navcolor.classList.remove("scrolled");
+//             }
+//         }
+//     }    
+// });
 
 
 // Password

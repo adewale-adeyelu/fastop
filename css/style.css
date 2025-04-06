@@ -120,17 +120,18 @@ body {
 }
 
 .Navcolor {
-    background-color: #fb8e0b !important;
+    background-color: #fb8e0b;
     color: #fff;
     transition: background-color 0.3s ease-in-out;
 }
 
-.Navcolor.scrolled{
-    background-color: #283a5ae6 !important;
-}
+/* 
+.scrolled {
+    background-color: #283a5ae6;
+} */
 
-.Navcolor-2 {
-    background-color: #fb8e0b !important;
+.bg-color {
+    background-color: #fb8e0b;
 }
 
 .reverse-row{
@@ -153,7 +154,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-right: 15px;
-    /* background-color: #fa8900; */
     border-radius: 50px;
 }
 
@@ -210,11 +210,7 @@ body {
 }
 
 .radius-border-3{
-    /* border: 2px solid #fff; */
     border-radius: 20px;
-    /* padding: 10px 15px; */
-    /* font-weight: 500; */
-    /* font: 17px poppins, sans-serif; */
 }
 
 .steps-number{
@@ -298,7 +294,7 @@ body {
 }
 
 .font-14{
-    font: 18px "Open Sans", system-ui;
+    font: 16px "Open Sans", system-ui;
     color: #444444;
     line-height: 32px;
 }
@@ -334,7 +330,6 @@ body {
 
 .padding-box{
     padding: 50px 30px;
-    /* z-index: 9999; */
 }
 
 .transform:hover {
@@ -370,7 +365,7 @@ body {
 
 .call-to-action:before {
     content: "";
-    /* background: color-mix(in srgb, #fa8e0b, transparent 35%); */
+    background: color-mix(in srgb, #fa8e0b, transparent 35%);
     position: absolute;
     inset: 0;
     z-index: 2;
@@ -387,12 +382,12 @@ body {
     z-index: 1;
 }
 
-.call-to-action h3 {
+/* .call-to-action h3 {
     color: #fff !important;
     font-size: 28px;
     font-weight: 700;
-    z-index: 99;
-}
+    z-index: 99999 !important;
+} */
 
 .section {
     color: #fff;
@@ -486,14 +481,14 @@ body {
     .reverse-row{
         flex-direction: row-reverse !important;
     }
-    /* .Navcolor {
+    .Navcolor {
         background-color: #fb8e0b;
         color: #fff;
         transition: background-color 0.3s ease-in-out;
     }
-    .Navcolor.scrolled {
-        background-color: #283a5ae6 !important;
-    } */
+    .scrolled {
+        background-color: #283a5ae6;
+    }
     .bg-color-2{
         padding: 10px 15px;
     }
@@ -515,9 +510,6 @@ body {
     .font-3{
         font-size: 15px;
     }
-    .image-2{
-        max-width: 100%;
-    }
     .faq-img{
         padding: 25px 20px;
     }
@@ -532,5 +524,14 @@ body {
     .line{
         margin: 0px 100px; 
         border-bottom: 2px solid #444444;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .column-reverse{
+        flex-direction: column-reverse;
+    }
+    .mg-top-1{
+        margin-top: 10px;
     }
 }
